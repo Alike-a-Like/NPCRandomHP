@@ -2,7 +2,7 @@
 Hooks.on("createToken", (TDoc, t1, t2) => {
 	
         // Checks if its a NPC type of actor
-	if (TDoc.actor.type === "NPC") {
+	if (TDoc.actor.type == "NPC") {
 		// getting the NPC Hit Dice
 		let HD = TDoc.actor.data.data.attributes.hitDice.value;
 		// rolling the NPC's hit points
